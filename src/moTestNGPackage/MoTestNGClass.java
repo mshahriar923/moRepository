@@ -16,16 +16,17 @@ public class MoTestNGClass {
 	public WebDriver driver; 
 	
 	@BeforeTest
-	public void launchBrowser(){
+	public void launchBrowser()
+	{
 		System.out.println("Launching Browser");
 		System.setProperty("webdriver.chrome.driver", driverPath);
 		driver = new ChromeDriver();
-		//driver.get(homepageUrl);
 	}
 	
   @SuppressWarnings("deprecation")
 @Test (priority = 1)
-  public void wwwIsUp() {
+  public void wwwIsUp() 
+  {
 	  
 	  			driver.get(homepageUrl);
 	  			String expectedTitle = "OSHA 10-Hour and OSHA 30-Hour Online Safety Training - ClickSafety";
@@ -36,11 +37,6 @@ public class MoTestNGClass {
   
   @Test (priority = 0, enabled=true)
   public void loginFormLoaded(){
-	  //System.setProperty("webdriver.chrome.driver", "C:\\Users\\mohammed.shahriar\\chromedriver.exe");
-	  //WebDriver d1 = new ChromeDriver();
-	  //d1.get("http://stageadmin.clicksafety.com");
-	  //System.out.println(d1.getTitle());
-	  //d1.close();
 	  driver.get(adminURL);
 	  }
   
