@@ -33,7 +33,7 @@ public class MoTestNGClass {
 				String expectedTitle = "OSHA 10-Hour and OSHA 30-Hour Online Safety Training - ClickSafety";
 				String actualTitle = driver.getTitle();
 				Assert.assertEquals(expectedTitle, actualTitle);
-				//driver.close();
+			
   }
   
   @Test (priority = 0, enabled=false)
