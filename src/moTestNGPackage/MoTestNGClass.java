@@ -20,26 +20,28 @@ public class MoTestNGClass {
 		System.out.println("Launching Browser");
 		System.setProperty("webdriver.chrome.driver", driverPath);
 		driver = new ChromeDriver();
-		driver.get(homepageUrl);
+		//driver.get(homepageUrl);
 	}
 	
   @SuppressWarnings("deprecation")
 @Test (priority = 1)
   public void wwwIsUp() {
 	  
-				String expectedTitle = "OSHA 10-Hour and OSHA 30-Hour Online Safety Training - ClickSafety";
+	  			driver.get(homepageUrl);
+	  			String expectedTitle = "OSHA 10-Hour and OSHA 30-Hour Online Safety Training - ClickSafety";
 				String actualTitle = driver.getTitle();
 				Assert.assertEquals(expectedTitle, actualTitle);
 			
   }
   
-  @Test (priority = 0, enabled=false)
+  @Test (priority = 0, enabled=true)
   public void loginFormLoaded(){
-	  System.setProperty("webdriver.chrome.driver", "C:\\Users\\mohammed.shahriar\\chromedriver.exe");
-	  WebDriver d1 = new ChromeDriver();
-	  d1.get("http://stageadmin.clicksafety.com");
-	  System.out.println(d1.getTitle());
-	  d1.close();
+	  //System.setProperty("webdriver.chrome.driver", "C:\\Users\\mohammed.shahriar\\chromedriver.exe");
+	  //WebDriver d1 = new ChromeDriver();
+	  //d1.get("http://stageadmin.clicksafety.com");
+	  //System.out.println(d1.getTitle());
+	  //d1.close();
+	  driver.get(adminURL);
 	  }
   
   @AfterTest
