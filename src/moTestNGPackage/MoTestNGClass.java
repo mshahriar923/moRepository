@@ -27,9 +27,6 @@ public class MoTestNGClass {
 @Test (priority = 1)
   public void wwwIsUp() {
 	  
-				//System.setProperty("webdriver.chrome.driver", driverPath);
-				//driver = new ChromeDriver();
-				//driver.get(homepageUrl);
 				String expectedTitle = "OSHA 10-Hour and OSHA 30-Hour Online Safety Training - ClickSafety";
 				String actualTitle = driver.getTitle();
 				Assert.assertEquals(expectedTitle, actualTitle);
