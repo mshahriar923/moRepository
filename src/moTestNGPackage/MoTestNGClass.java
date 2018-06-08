@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.*;
 
 public class MoTestNGClass {
 	public String homepageUrl = "http://www.clicksafety.com";
-	public String adminURL = "http://stg-portal.clicksafey.com";
+	public String adminURL = "http://stageadmin.clicksafey.com";
 	String driverPath = "C:\\Users\\mohammed.shahriar\\chromedriver.exe";
 	public WebDriver driver; 
 	
