@@ -29,7 +29,7 @@ public class MoTestNGClass {
   {
 	  
 	  			driver.get(homepageUrl);
-	  			String expectedTitle = "OSHA 10-Hour and OSHA 30-Hour Online Safety Training - ClickSafety";
+	  			String expectedTitle = "OSHA 10-Hour and OSHA 30-Hour Online Safety Training - ClickSafety"; //getting homepage title
 				String actualTitle = driver.getTitle();
 				Assert.assertEquals(expectedTitle, actualTitle);
 			
